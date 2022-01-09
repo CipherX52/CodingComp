@@ -1,1 +1,40 @@
-<h1>HELLO</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel='stylesheet' href='css/signup.css'>
+
+</head>
+
+<body>
+    <br>
+    <br>
+
+    <div class="card mx-auto container">        
+            <div class="card-body px-lg-5 pt-0">
+                <form class="text-center" action="/home/mailer" onsubmit="return validate();" method="post" style="color: #757575;" novalidate>
+                    <div class="md-form mt-0">
+                        <label for="email"><h4>E-mail</h4></label>
+                        <input id="email" name="email" type="email" class="form-control" placeholder="abc@xyz.pq" required>
+                        <label for="email" id="emailfeedback" style="color:red; visibility:hidden">Enter valid e-mail id.</label>
+                    </div>            
+                    <button id="signup" name="signup" type="submit" class="btn btn-success text-center">Send Email</button>
+                    <br>
+                        
+                </form>
+        
+            </div>
+        
+
+    </div>
+    <script type="text/javascript" src="/js/email.js"></script>
+
+  </body>
+</html>
